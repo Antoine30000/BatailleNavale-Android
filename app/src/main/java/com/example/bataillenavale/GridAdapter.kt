@@ -34,7 +34,7 @@ class GridAdapter(private val context: Context, private val gridSize: Int) : Bas
     fun hideShips() {
         for (i in hiddenShips.indices) {
             if (hiddenShips[i] == R.drawable.boat) {
-                gridItems[i] = 0 // or some other drawable representing hidden state
+                gridItems[i] = 0
             }
         }
         notifyDataSetChanged()

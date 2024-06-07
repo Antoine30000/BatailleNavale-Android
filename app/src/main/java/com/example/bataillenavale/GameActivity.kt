@@ -53,13 +53,13 @@ class GameActivity : AppCompatActivity() {
                 if (position == shipPosition) {
                     adapter.setItem(position, R.drawable.hit)
                     tvInstruction.text = "Vous avez gagné!"
-                    gridView.isEnabled = false // Disable further clicks
+                    gridView.isEnabled = false
                 } else {
                     adapter.setItem(position, R.drawable.miss)
                 }
                 if (guesses >= maxGuesses && position != shipPosition) {
                     tvInstruction.text = "Vous avez perdu!"
-                    gridView.isEnabled = false // Disable further clicks
+                    gridView.isEnabled = false
                 }
             }
         }
